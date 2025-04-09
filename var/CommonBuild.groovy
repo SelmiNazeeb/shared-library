@@ -1,4 +1,4 @@
-// var/example/CommonBuild.groovy
+// var/CommonBuild.groovy
 def call(String appName = 'DefaultApp') {
     pipeline {
         agent any
