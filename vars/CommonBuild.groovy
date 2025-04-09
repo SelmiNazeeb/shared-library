@@ -1,13 +1,8 @@
-// vars/CommonBuild.groovy
-def call(String appName) {
-    pipeline {
-        agent any
-        stages {
-            stage('Run') {
-                steps {
-                    echo "Running for: ${appName}"
-                }
-            }
-        }
+def call() {
+    stage('Checkout') {
+        checkout scm
+    }
+    stage('Unit Tests') {
+        echo 'Running unit tests...'
     }
 }
